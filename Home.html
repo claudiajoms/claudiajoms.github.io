@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type=text/css" href=style2.css">
 
-  <center><title>NYC: New York Claudia</title>
+ <center><title>NYC: New York Claudia</title>
 </head>
 
 <style>
@@ -50,10 +50,36 @@ background-color:#b0c4de;
  		<li class="Contact"><a href=Contact.html>Contact</a></li>
  	</ul>
  	
-<h1><center>Lookbooks</h1>
+<style>
+.mySlides {display:none;}
+</style>
+<body>
 
-<center><iframe width="660" height="415" src="https://www.youtube.com/embed/HdF679-8pB4" frameborder="0" allowfullscreen></iframe>
-</video>
+<center><div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="Me.jpeg" style="width:100%">
+  <img class="mySlides" src="Me2.jpeg" style="width:100%">
+  <img class="mySlides" src="Me3.jpeg" style="width:100%">
+  <img class="mySlides" src="Me4.jpeg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
 
 </body>
 </html>
+
