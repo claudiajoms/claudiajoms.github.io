@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type=text/css" href=style2.css">
+
+ <center><title>NYC: New York Claudia</title>
+</head>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: Left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#b0c4de;
+}
+</style>
+
+<body>
+<div class="header">
+  <h1>NYC: New York Claudia</h1>
+</div>
+
+<div class="nav">
+	<ul>
+ 		<li class="Home"><a href=Index.html>Home</a></li>
+ 		<li class="About"><a href=About.html>About</a></li>
+ 		<li class="Lookbooks"><a href=Lookbooks.html>Lookbooks</a></li>
+ 		<li class="Vlogs"><a href=Vlogs.html>Vlogs</a></li>
+ 		<li class="Contact"><a href=Contact.html>Contact</a></li>
+ 	</ul>
+ 	
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<center><div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="Me.jpeg" style="width:100%">
+  <img class="mySlides" src="Me2.jpeg" style="width:100%">
+  <img class="mySlides" src="Me3.jpeg" style="width:100%">
+  <img class="mySlides" src="Me4.jpeg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
+
