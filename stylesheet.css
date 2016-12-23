@@ -1,7 +1,7 @@
 .nav a {
 	text-decoration: none;
 	color: white;
-	display: block;
+	display: inline-block;
 	transition: .3s background-color;
 }
 
@@ -26,3 +26,7 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block"; 
 }
+
+p {
+	font-family: "Tahoma";
+	}
